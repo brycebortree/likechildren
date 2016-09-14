@@ -1,0 +1,98 @@
+* {
+  font-family: 'EB Garamond', serif;
+  color: white;
+}
+
+.main {
+  position: absolute;
+  height: 700px;
+  width: 100%;
+  /*background: #1a1a1a; */
+  /* background: -webkit-linear-gradient(black, #1a1a1a);
+  background: -o-linear-gradient(black, #1a1a1a);
+  background: -moz-linear-gradient(black, #1a1a1a);
+  background: linear-gradient(black, #1a1a1a);*/ 
+  /*background-color:  #1a1a1a;*/
+}
+
+body {
+/*  background: #1a1a1a; 
+*/}
+
+#words {
+  position: relative;
+  padding-top: 300px;
+  padding-left: 10%;
+  width: 80%;
+  text-align: center;
+  align: center;
+}
+
+p .asides {
+  font-size: 20px;
+ /* not smaller yet*/
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 32px;
+ -webkit-touch-callout: none;
+ -webkit-user-select: none;
+ -khtml-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+}
+
+/*for video*/
+
+.main button { 
+  display: block;
+  width: 80%;
+  padding: .4rem;
+  border: none; 
+  margin: 1rem auto; 
+  font-size: 1.3rem;
+  background: rgba(255,255,255,0.23);
+  color: #fff;
+  border-radius: 3px; 
+  cursor: pointer;
+  transition: .3s background;
+}
+.main button:hover { 
+   background: rgba(0,0,0,0.5);
+}
+
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('assets/ocean.png') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+.stopfade { 
+   opacity: .5;
+}
+
+
+@media screen and (max-width: 500px) { 
+  div{width:70%;} 
+}
+
+@media screen and (max-device-width: 800px) {
+  html { background: url(assets/ocean.png) #000 no-repeat center center fixed; }
+  #bgvid { display: none; }
+}
+
+/*media queries are fun*/
