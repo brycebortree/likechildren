@@ -6,8 +6,7 @@
     var i = 0;
 
     var storyline = 
-      ['<h1>Simmer</h1>',
-      '<p>In this moment, fear is having nothing to say</p>',
+      ['<p>In this moment, fear is having nothing to say</p>',
       '<p>and you’re right you have nothing to say,</p>',
       '<p>so instead, let’s imagine us at the bottom of the ocean</p>',
       '<p>and let’s imagine the clay underneath the soles of our feet,</p>',
@@ -123,7 +122,7 @@
   }); 
 
   pauseButton.addEventListener("click", function() {
-    vid.classList.toggle("stopfade");
+    // vid.classList.toggle("stopfade");
     if (vid.paused) {
       vid.play();
       pauseButton.innerHTML = "Pause";

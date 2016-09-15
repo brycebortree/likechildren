@@ -1,23 +1,16 @@
-* {
-  font-family: 'EB Garamond', serif;
-  color: white;
-}
-
 .main {
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font-weight:100; 
+  background: rgba(0,0,0,0.3);
+  color: white;
+  padding: 2rem;
+  width: 70%;
+  margin:2rem;
+  display: inline-block;
+  font-size: 1.2rem;
   position: absolute;
   height: 700px;
-  width: 100%;
-  /*background: #1a1a1a; */
-  /* background: -webkit-linear-gradient(black, #1a1a1a);
-  background: -o-linear-gradient(black, #1a1a1a);
-  background: -moz-linear-gradient(black, #1a1a1a);
-  background: linear-gradient(black, #1a1a1a);*/ 
-  /*background-color:  #1a1a1a;*/
 }
-
-body {
-/*  background: #1a1a1a; 
-*/}
 
 #words {
   position: relative;
@@ -63,28 +56,28 @@ p {
   cursor: pointer;
   transition: .3s background;
 }
+
 .main button:hover { 
    background: rgba(0,0,0,0.5);
 }
 
 video { 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
-    background: url('assets/ocean.png') no-repeat;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background: url('assets/ocean.png') no-repeat;
   background-size: cover;
   transition: 1s opacity;
 }
 .stopfade { 
    opacity: .5;
 }
-
 
 @media screen and (max-width: 500px) { 
   div{width:70%;} 
