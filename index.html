@@ -4,19 +4,21 @@
   <title>like children</title>
   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 </head>
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="style.css">
 <body>
-  <div class="main">
+  <div class="container">
+    <div id="main">
+      <video poster="assets/ocean.png" id="bgvid" playsinline autoplay muted>
+        <source src="assets/ocean.mov" type="video/webm">
+      </video>
 
-    <video poster="assets/ocean.png" id="bgvid" playsinline autoplay muted>
-      <source src="assets/ocean.mov" type="video/webm">
-    </video>
-
-    <div id="words">
-      <h1 class="bigboy">simmer</h1>
-      <p class="fadeIn" id="instructions">an interactive poem</p>
-      <p class="fadeIn" id="instructions">press right arrow key to progress, down for more information </p></p>
-    <button>Pause</button>
+      <div id="words">
+        <h1 class="bigboy">Simmer</h1>
+        <p class="fadeIn" id="instructions">an interactive poem</p>
+        <p class="fadeIn" id="instructions"> use ← & → to explore</p>
+      <button>Pause</button>
+    </div>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>

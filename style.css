@@ -1,24 +1,20 @@
-.main {
-  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+#main {
+  font-family: 'Lato', sans-serif;
   font-weight:100; 
   background: rgba(0,0,0,0.3);
   color: white;
-  padding: 2rem;
   width: 70%;
-  margin:2rem;
-  display: inline-block;
-  font-size: 1.2rem;
-  position: absolute;
-  height: 700px;
+  margin: auto;
+  height: 100%;
 }
 
 #words {
-  position: relative;
-  padding-top: 300px;
-  padding-left: 10%;
-  width: 80%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  align: center;
 }
 
 p .asides {
@@ -27,12 +23,12 @@ p .asides {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 4rem;
   font-weight: bold;
 }
 
 p {
-  font-size: 32px;
+  font-size: 1.7rem;
  -webkit-touch-callout: none;
  -webkit-user-select: none;
  -khtml-user-select: none;
@@ -43,7 +39,7 @@ p {
 
 /*for video*/
 
-.main button { 
+#main button { 
   display: block;
   width: 80%;
   padding: .4rem;
@@ -57,7 +53,7 @@ p {
   transition: .3s background;
 }
 
-.main button:hover { 
+#main button:hover { 
    background: rgba(0,0,0,0.5);
 }
 
@@ -87,5 +83,3 @@ video {
   html { background: url(assets/ocean.png) #000 no-repeat center center fixed; }
   #bgvid { display: none; }
 }
-
-/*media queries are fun*/

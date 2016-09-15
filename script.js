@@ -2,7 +2,7 @@
     console.log('lock/load');
     $('h1#fadein').fadeIn(3000)
 
-    var div = document.getElementsByClassName('main')[0];
+    var div = document.getElementById('main');
     var i = 0;
 
     var storyline = 
@@ -107,7 +107,7 @@
   // for video background
 
   var vid = document.getElementById("bgvid");
-  var pauseButton = document.querySelector(".main button");
+  var pauseButton = document.querySelector("#main button");
 
   function vidFade() {
     vid.classList.add("stopfade");
@@ -132,8 +132,25 @@
     }
 })
 
+  // window height
+  $(function(){
+      var windowH = $(window).height();
+      var wrapperH = $('.container').height();
+      if(windowH > wrapperH) {                            
+          $('.container').css({'height':($(window).height())+'px'});
+      }                                                                               
+      $(window).resize(function(){
+          var windowH = $(window).height();
+          var wrapperH = $('.container').height();
+          var differenceH = windowH - wrapperH;
+          var newH = wrapperH + differenceH;
+          var mainH = $('#main').height();
+          if(windowH > mainH) {
+              $('.container').css('height', (newH)+'px');
+          }
 
-
+      })          
+  });
 
 
 });
