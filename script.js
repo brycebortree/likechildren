@@ -87,7 +87,7 @@
 
     div.addEventListener('click', function(event){
       var words = document.getElementById('words');
-      if(j === storyline[i].length) {i++; j = 0;};
+      if(j === storyline[i].length) {i++; j = 0; words.innerHTML = "";};
       words.innerHTML= words.innerHTML + storyline[i][j];
       j++;
 
