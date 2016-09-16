@@ -87,33 +87,34 @@
 
     div.addEventListener('click', function(event){
       var words = document.getElementById('words');
+      if(j === storyline[i].length) {i++; j = 0;};
       words.innerHTML= words.innerHTML + storyline[i][j];
       j++;
 
-      if(j === storyline[i].length) {i++};
     });
 
+//work on keys
 
-    $(document).keydown(function(e) {
-    switch(e.which) {
-        case 37: // left
-        $('#words').html(storyline[i--])
-        break;
+  //   $(document).keydown(function(e) {
+  //   switch(e.which) {
+  //       case 37: // left
+  //       $('#words').html(storyline[i][j--])
+  //       break;
 
-        case 38: // up
-        break;
+  //       case 38: // up
+  //       break;
 
-        case 39: // right
-        $('#words').html(storyline[i++])
-        break;
+  //       case 39: // right
+  //       $('#words').html(storyline[i][j++])
+  //       break;
 
-        case 40: // down
-        break;
+  //       case 40: // down
+  //       break;
 
-        default: return; 
-    }
-    e.preventDefault(); 
-  });
+  //       default: return; 
+  //   }
+  //   e.preventDefault(); 
+  // });
 
   // for video background
 
