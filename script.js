@@ -89,15 +89,15 @@
       $('#fader').hide();
     });
 
-    // div.addEventListener('click', function(event){
-    //   var words = document.getElementById('words');
-    //   $("span").removeClass();
-    //   $("span").addClass("infastFadeIn");
-    //   if(j === storyline[i].length) {i++; j = 0; words.innerHTML = "";};
-    //   words.innerHTML= words.innerHTML + storyline[i][j];
-    //   j++;
+    div.addEventListener('click', function(event){
+      var words = document.getElementById('words');
+      $("span").removeClass();
+      $("span").addClass("infastFadeIn");
+      if(j === storyline[i].length) {i++; j = 0; words.innerHTML = "";};
+      words.innerHTML= words.innerHTML + storyline[i][j];
+      j++;
 
-    // });
+    });
 
 // work on keys
 
@@ -159,17 +159,17 @@
           }
 
 
-        if(j === storyline[i].length) {i++; j = 0; words.innerHTML = "";};
+          if(j === storyline[i].length) {i++; j = 0; words.innerHTML = "";};
 
-        words.innerHTML = words.innerHTML + storyline[i][j];
-        j++;
-        break;
+          words.innerHTML = words.innerHTML + storyline[i][j];
+          j++;
+          break;
 
-        case 40: // down
-        break;
+          case 40: // down
+          break;
 
-        default: return; 
-    }
+          default: return; 
+          }
     e.preventDefault(); 
   });
 
