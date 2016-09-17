@@ -30,10 +30,7 @@ a:hover, a:visited, a:link, a:active {
   display: inline-block;
   width: 60%;
   padding-left: 5%;
-
-/*  top: 50%;
-  left: 50%;*/
-/*  transform: translate(-50%, -50%); */
+  max-width: 40em;
 }
 
 span.inactive{
@@ -42,6 +39,13 @@ span.inactive{
 
 button {
   display: none;
+  font-size: 1.5rem;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 h1 {
@@ -72,11 +76,11 @@ span {
 
 /*for fading*/
 .fastFadeIn {
-  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: fadein 3s; /* Firefox < 16 */
-      -ms-animation: fadein 3s; /* Internet Explorer */
-       -o-animation: fadein 3s; /* Opera < 12.1 */
-          animation: fadein 3s;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
 
   text-align: center;
 }
