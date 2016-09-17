@@ -17,6 +17,13 @@
   transform: translate(-50%, -50%);
 }
 
+a:hover, a:visited, a:link, a:active {
+  color: white;
+  text-deocration: none;
+  border: 0;
+
+}
+
 #words {
   padding-top: 100px;
   position: absolute;
@@ -27,6 +34,14 @@
 /*  top: 50%;
   left: 50%;*/
 /*  transform: translate(-50%, -50%); */
+}
+
+span.inactive{
+  opacity: 0.3;
+}
+
+button {
+  display: none;
 }
 
 h1 {
