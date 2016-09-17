@@ -99,6 +99,8 @@
 
     });
 
+
+
 // work on keys
 
     $(document).keydown(function(e) {
@@ -176,7 +178,8 @@
   // for video background
 
   var vid = document.getElementById("bgvid");
-  var pauseButton = document.querySelector("#main button");
+  var pauseButton = document.querySelector("#container button");
+
 
   function vidFade() {
     vid.classList.add("stopfade");
@@ -204,23 +207,34 @@
   // window height for vertical centering
   $(function(){
       var windowH = $(window).height();
-      var wrapperH = $('.container').height();
+      var wrapperH = $('#container').height();
       if(windowH > wrapperH) {                            
-          $('.container').css({'height':($(window).height())+'px'});
+          $('#container').css({'height':($(window).height())+'px'});
       }                                                                               
       $(window).resize(function(){
           var windowH = $(window).height();
-          var wrapperH = $('.container').height();
+          var wrapperH = $('#container').height();
           var differenceH = windowH - wrapperH;
           var newH = wrapperH + differenceH;
           var mainH = $('#main').height();
           if(windowH > mainH) {
-              $('.container').css('height', (newH)+'px');
+              $('#container').css('height', (newH)+'px');
           }
 
       })          
   });
 
+
+  //for autoplay
+  $("#autoplay").on('click', function(event){
+      setInterval(function(){
+        clickMain();
+      }, 3000);
+    });
+
+  function clickMain(){
+    $('#main').trigger('click');
+  }
 
 });
 
