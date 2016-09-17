@@ -164,10 +164,13 @@ video {
 }
 
 @media screen and (max-width: 500px) { 
-  div{width:70%;} 
+  div#main{width:100%;} 
 }
 
 @media screen and (max-device-width: 800px) {
-  html { background: url(assets/ocean.png) #000 no-repeat center center fixed; }
+  html { background: url(assets/ocean.png); background-size: cover; height: 100%; width: 100%; }
+  div{width: 100%;}
+  span, p {font-size: 3rem;}
+  button {visibility: hidden;}
   #bgvid { display: none; }
 }
